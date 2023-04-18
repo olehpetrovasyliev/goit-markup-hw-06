@@ -684,23 +684,26 @@
             <use href="./images/icon.svg#icon-Close-modal"></use>
           </svg>
         </button>
+        <p class="form-title">Leave your contacts and we will call you back</p>
         <form action="">
           <label for="user_name">Name<input type="text" name="name" /></label
-          ><label for="user_phone"
-            >Phone<input type="phone" name="phone" /></label
+          ><label for="user_phone">Phone<input type="tel" name="phone" /></label
           ><label for="user_email"
             >Email<input type="email" name="email" /></label
           ><label for="user_comment"
-            >Comment<input
-              type="textarea"
+            >Comment
+            <textarea
               name="comment"
-              placeholder="Your comment" /></label
+              id="comment"
+              placeholder="Your comment"
+              cols="30"
+              rows="10"
+            ></textarea></label
           ><label for="user_agreement"
-            >I accept the terms and conditions of the Privacy Policy<input
-              type="checkbox"
-              name="comment"
-          /></label>
-          <button type="submit">Send</button>
+            ><input type="checkbox" name="comment" />I accept the terms and
+            conditions of the Privacy Policy</label
+          >
+          <button type="submit">Submit</button>
         </form>
       </div>
     </div>

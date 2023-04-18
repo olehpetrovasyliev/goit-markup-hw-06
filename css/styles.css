@@ -29,6 +29,12 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--color-body-text);
 }
+textarea{
+    resize: none;
+}
+label{
+    display: block;
+}
 .link {
     letter-spacing: 0.03em;
     color: #4D5AE5;
