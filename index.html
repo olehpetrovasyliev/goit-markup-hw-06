@@ -684,10 +684,18 @@
             <use href="./images/icon.svg#icon-Close-modal"></use>
           </svg>
         </button>
-        <p class="form-title">Leave your contacts and we will call you back</p>
-        <form action="">
-          <label for="user_name">Name<input type="text" name="name" /></label
-          ><label for="user_phone">Phone<input type="tel" name="phone" /></label
+        <strong class="form-title"
+          >Leave your contacts and we will call you back</strong
+        >
+        <form action="" name="contact_form" method="post">
+          <div>
+            <label for="user_name">Name</label>
+            <input type="text" name="name" />
+            <svg>
+              <use></use>
+            </svg>
+          </div>
+          <label for="user_phone">Phone<input type="tel" name="phone" /></label
           ><label for="user_email"
             >Email<input type="email" name="email" /></label
           ><label for="user_comment"
@@ -700,8 +708,8 @@
               rows="10"
             ></textarea></label
           ><label for="user_agreement"
-            ><input type="checkbox" name="comment" />I accept the terms and
-            conditions of the Privacy Policy</label
+            ><input type="checkbox" name="comment" checked />I accept the terms
+            and conditions of the Privacy Policy</label
           >
           <button type="submit">Submit</button>
         </form>

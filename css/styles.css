@@ -317,7 +317,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .modal{
-    min-width: 408px;
+    max-width: 408px;
+    width: 100%;
     min-height: 576px;
     padding: 24px;
     background-color: #FCFCFC;
