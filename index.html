@@ -687,30 +687,46 @@
         <strong class="form-title"
           >Leave your contacts and we will call you back</strong
         >
-        <form action="" name="contact_form" method="post">
-          <div>
-            <label for="user_name">Name</label>
-            <input type="text" name="name" />
-            <svg>
-              <use></use>
-            </svg>
+        <form method="post">
+          <div class="label-wrapper">
+            <label for="user_name"
+              ><span class="label-text-span">Name</span>
+              <input type="text" name="name" class="" />
+            </label>
           </div>
-          <label for="user_phone">Phone<input type="tel" name="phone" /></label
-          ><label for="user_email"
-            >Email<input type="email" name="email" /></label
-          ><label for="user_comment"
-            >Comment
-            <textarea
-              name="comment"
-              id="comment"
-              placeholder="Your comment"
-              cols="30"
-              rows="10"
-            ></textarea></label
-          ><label for="user_agreement"
-            ><input type="checkbox" name="comment" checked />I accept the terms
-            and conditions of the Privacy Policy</label
-          >
+          <div class="label-wrapper">
+            <label for="user_phone"
+              ><span class="label-text-span">Phone</span>
+              <input type="tel" name="phone" class="input-1" />
+            </label>
+          </div>
+          <div class="label-wrapper">
+            <label for="user_email"
+              ><span class="label-text-span">Email</span>
+              <input type="email" name="email" />
+            </label>
+          </div>
+          <div class="label-wrapper">
+            <label for="user_comment"
+              ><span class="label-text-span"><p>Comment</p></span>
+              <textarea
+                name="comment"
+                id="comment"
+                placeholder="Your comment"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+          </div>
+          <div class="label-wrapper">
+            <label for="user_agreement" class="agreement"
+              ><input type="checkbox" name="agreement" checked />I
+              <span class="label-text-span"
+                >accept the terms and conditions of the
+                <a href="./index.html">Privacy Policy</a></span
+              ></label
+            >
+          </div>
           <button type="submit">Submit</button>
         </form>
       </div>
