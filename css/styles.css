@@ -54,7 +54,19 @@ input{
         letter-spacing: 0.04em;
 }
 input::placeholder{
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(24/2);
+    letter-spacing: 0.04em;
+}
+textarea::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.04em;
 }
 .button{
     display: inline-block;
@@ -302,7 +314,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-input:hover, 
 .footer-input:focus{
-    outline: 1px solid #4D5AE5;
+    border: 1px solid #4D5AE5;
+    outline: transparent;
 }
 .footer-subscribe-text{
     font-family: inherit;
@@ -470,7 +483,8 @@ label {
 .input-modal:focus,
 .input-modal:hover,
 .input-modal:active{
-    outline: 1px solid #4D5AE5;
+    border: 1px solid #4D5AE5;
+    outline: transparent;
 }
 .input-modal:last-child{
     padding-left: 16px;
@@ -478,6 +492,11 @@ label {
 }
 .chb{
     margin-bottom: 24px;
+    width: 16px;
+    height: 16px;
+}
+.priv-pol{
+    text-decoration: underline;
 }
 .input-wrapper{
     position: relative;
@@ -857,7 +876,7 @@ color: var(--color-dark);
 }
 .portfoliowork{
         text-decoration: none;
-        width: calc((100% - 2 * 24px) / 3);
+        max-width: 360px;
         display: block;
         
 }
