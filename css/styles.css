@@ -410,13 +410,18 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
 .modal-form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 
 .is-hidden {
     opacity: 0;
@@ -431,8 +436,15 @@ textarea {
 label {
     display: flex;
     flex-direction: column;
+    gap: 4px;
     position: relative;
-    margin-bottom: 8px;
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.04em;
+            color: #8E8F99;
 }
 
 .agreement {
@@ -441,22 +453,8 @@ label {
     margin-bottom: 0;
 }
 
-.label-wrapper {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.04em;
-    color: #8E8F99;
-}
 
-.label-text-span {
-    padding-bottom: 4px;
-}
-.label-text-span:last-child {
-    padding-bottom: 0;
-}
+
 .form-title{
     font-family: 'Roboto';
         font-style: normal;
@@ -465,11 +463,11 @@ label {
         line-height: 24px;
         letter-spacing: 0.02em;
         color: var(--color-dark);
-        margin-bottom: 16px;
 }
 .form-wrapper{
     display: flex;
     flex-direction: column;
+    gap:8px;
 }
 .input-modal {
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -494,7 +492,7 @@ label {
 .chb-wrapper{
     display: flex;
     align-items: center;
-    padding-top: 8px;
+    margin-top: 8px;
     margin-bottom: 24px;
 }
 .chbx{
@@ -545,7 +543,7 @@ label {
    fill: currentColor;
 transition-duration: 250ms;
 }
-.input-modal:focus + .form-icon{
+.input-modal:focus, .input-modal:hover + .form-icon{
     fill: var(--color-primary);
     
 }
