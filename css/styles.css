@@ -418,7 +418,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-
 .is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -438,7 +437,7 @@ label {
 
 .agreement {
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 0;
 }
 
@@ -455,7 +454,9 @@ label {
 .label-text-span {
     padding-bottom: 4px;
 }
-
+.label-text-span:last-child {
+    padding-bottom: 0;
+}
 .form-title{
     font-family: 'Roboto';
         font-style: normal;
@@ -490,10 +491,44 @@ label {
     padding-left: 16px;
     padding-top: 8px;
 }
-.chb{
+.chb-wrapper{
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
     margin-bottom: 24px;
-    width: 16px;
-    height: 16px;
+}
+.chbx{
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+.checkbox-style{
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 2px;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+        background-color: transparent;
+        transition: background-color 250ms ease;
+} 
+.check{
+    fill: transparent;
+    transition: fill 250ms ease 250ms;
+}
+.chbx:checked + .agreement > .checkbox-style{
+    background-color: var(--color-pressed);
+}
+.chbx:checked + .agreement >.checkbox-style > .check{
+    fill: var(--color-light);
 }
 .priv-pol{
     text-decoration: underline;
@@ -516,7 +551,7 @@ transition-duration: 250ms;
 .modal-submit{
     background: #4D5AE5;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border: none;
+        border-color: transparent;
         border-radius: 4px;
         max-width: 169px;
         width: 100%;
@@ -606,7 +641,7 @@ transition-duration: 250ms;
     padding: 16px 32px;
     display: block;
     height: 56px;
-    border: none;
+    border-color: transparent;
     margin: 0 auto;
     transition-property: background-color, box-shadow;
     transition-duration: 250ms;
