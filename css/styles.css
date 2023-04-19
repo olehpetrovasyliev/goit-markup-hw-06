@@ -526,6 +526,7 @@ label {
 }
 .chbx:checked + .agreement > .checkbox-style{
     background-color: var(--color-pressed);
+    border-color: transparent;
 }
 .chbx:checked + .agreement >.checkbox-style > .check{
     fill: var(--color-light);
@@ -649,8 +650,6 @@ transition-duration: 250ms;
 }
 .order:hover,
 .order:focus{
-        width: auto;
-        height: auto;
         background-color: #404BBF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
