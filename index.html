@@ -670,6 +670,23 @@
             </li>
           </ul>
         </div>
+        <form method class="footer-form">
+          <label for="">
+            <span class="footer-subscribe-text"> Subscribe </span>
+            <input
+              type="mail"
+              name="mail"
+              placeholder="Your Email"
+              class="footer-input"
+            />
+          </label>
+          <button class="footer-subscribe-button button">
+            Subscribe
+            <svg width="24px" height="24px" class="footer-btn-icon">
+              <use href="./images/icon.svg#footer-btn-icon"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -684,50 +701,63 @@
             <use href="./images/icon.svg#icon-Close-modal"></use>
           </svg>
         </button>
-        <strong class="form-title"
-          >Leave your contacts and we will call you back</strong
-        >
-        <form method="post">
-          <div class="label-wrapper">
-            <label for="user_name"
-              ><span class="label-text-span">Name</span>
-              <input type="text" name="name" class="" />
-            </label>
+
+        <form method="post" class="modal-form">
+          <strong class="form-title"
+            >Leave your contacts and we will call you back</strong
+          >
+          <div class="form-wrapper">
+            <div class="label-wrapper">
+              <label for="user_name"
+                ><span class="label-text-span">Name</span>
+                <input type="text" name="name" class="input-modal" />
+                <svg width="18px" height="18px" class="form-icon">
+                  <use href="./images/icon.svg#form-icon-1"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="label-wrapper">
+              <label for="user_phone">
+                <span class="label-text-span">Phone</span>
+                <input type="tel" name="phone" class="input-modal" />
+                <svg width="16px" height="24px" class="form-icon">
+                  <use href="./images/icon.svg#form-icon-2"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="label-wrapper">
+              <label for="user_email"
+                ><span class="label-text-span">Email</span>
+                <input type="email" name="email" class="input-modal" />
+                <svg width="18" height="24" class="form-icon">
+                  <use href="./images/icon.svg#form-icon-3"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="label-wrapper">
+              <label for="user_comment">
+                <span class="label-text-span"><p>Comment</p></span>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  placeholder="Text input"
+                  cols="30"
+                  rows="10"
+                  class="input-modal"
+                ></textarea>
+              </label>
+            </div>
+            <div class="label-wrapper">
+              <label for="user_agreement" class="agreement">
+                <input type="checkbox" name="agreement" checked class="chb" />
+                <span class="label-text-span"
+                  >I accept the terms and conditions of the
+                  <a href="./index.html">Privacy Policy</a></span
+                >
+              </label>
+            </div>
           </div>
-          <div class="label-wrapper">
-            <label for="user_phone"
-              ><span class="label-text-span">Phone</span>
-              <input type="tel" name="phone" class="input-1" />
-            </label>
-          </div>
-          <div class="label-wrapper">
-            <label for="user_email"
-              ><span class="label-text-span">Email</span>
-              <input type="email" name="email" />
-            </label>
-          </div>
-          <div class="label-wrapper">
-            <label for="user_comment"
-              ><span class="label-text-span"><p>Comment</p></span>
-              <textarea
-                name="comment"
-                id="comment"
-                placeholder="Your comment"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </label>
-          </div>
-          <div class="label-wrapper">
-            <label for="user_agreement" class="agreement"
-              ><input type="checkbox" name="agreement" checked />I
-              <span class="label-text-span"
-                >accept the terms and conditions of the
-                <a href="./index.html">Privacy Policy</a></span
-              ></label
-            >
-          </div>
-          <button type="submit">Submit</button>
+          <button type="submit" class="button modal-submit">Submit</button>
         </form>
       </div>
     </div>
