@@ -516,11 +516,11 @@ label {
         justify-content: center;
         margin-right: 8px;
         background-color: transparent;
-        transition: background-color 250ms ease;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .check{
     fill: transparent;
-    transition: fill 250ms ease 250ms;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .chbx:checked + .agreement > .checkbox-style{
     background-color: var(--color-pressed);
