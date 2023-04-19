@@ -53,7 +53,9 @@ input{
         line-height: 14px;
         letter-spacing: 0.04em;
 }
-
+input::placeholder{
+    font-family:'Roboto', sans-serif;
+}
 .button{
     display: inline-block;
     padding: 0;
@@ -278,7 +280,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .footer-form{
     display: flex;
     gap: 24px;
-    align-items: flex-end
+    align-items: flex-end;
+}
+.footer-label{
+    margin-bottom: 0;
 }
 .footer-input{
     border: 1px solid #FFFFFF;
@@ -415,11 +420,13 @@ label {
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-bottom: 8px;
 }
 
 .agreement {
     flex-direction: row;
     align-items: baseline;
+    margin-bottom: 0;
 }
 
 .label-wrapper {
@@ -456,7 +463,6 @@ label {
     max-width: 360px;
     width: 100%;
     min-height: 30px;
-    margin-bottom: 8px;
     position: relative;
     color: #2E2F42;
     padding-left: 38px;
@@ -473,9 +479,12 @@ label {
 .chb{
     margin-bottom: 24px;
 }
+.input-wrapper{
+    position: relative;
+}
 .form-icon{
     position: absolute;
-  top: 58%;
+  top: 50%;
   transform: translateY(-50%);
   left: 16px;
    fill: currentColor;

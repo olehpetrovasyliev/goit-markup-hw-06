@@ -671,7 +671,7 @@
           </ul>
         </div>
         <form method class="footer-form">
-          <label for="">
+          <label for="mail" class="footer-label">
             <span class="footer-subscribe-text"> Subscribe </span>
             <input
               type="mail"
@@ -710,19 +710,23 @@
             <div class="label-wrapper">
               <label for="user_name"
                 ><span class="label-text-span">Name</span>
-                <input type="text" name="name" class="input-modal" />
-                <svg width="18px" height="18px" class="form-icon">
-                  <use href="./images/icon.svg#form-icon-1"></use>
-                </svg>
+                <div class="input-wrapper">
+                  <input type="text" name="name" class="input-modal" />
+                  <svg width="18px" height="18px" class="form-icon">
+                    <use href="./images/icon.svg#form-icon-1"></use>
+                  </svg>
+                </div>
               </label>
             </div>
             <div class="label-wrapper">
               <label for="user_phone">
                 <span class="label-text-span">Phone</span>
-                <input type="tel" name="phone" class="input-modal" />
-                <svg width="16px" height="24px" class="form-icon">
-                  <use href="./images/icon.svg#form-icon-2"></use>
-                </svg>
+                <div class="input-wrapper">
+                  <input type="tel" name="phone" class="input-modal" />
+                  <svg width="16px" height="24px" class="form-icon">
+                    <use href="./images/icon.svg#form-icon-2"></use>
+                  </svg>
+                </div>
               </label>
             </div>
             <div class="label-wrapper">
@@ -754,7 +758,9 @@
                 <input type="checkbox" name="agreement" checked class="chb" />
                 <span class="label-text-span"
                   >I accept the terms and conditions of the
-                  <a href="./index.html">Privacy Policy</a></span
+                  <a href="./index.html" class="link priv-pol"
+                    >Privacy Policy</a
+                  ></span
                 >
               </label>
             </div>
