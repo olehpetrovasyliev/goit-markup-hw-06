@@ -324,6 +324,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         line-height: 24px;
         letter-spacing: 0.02em;
         margin-bottom: 16px;
+        color: var(--color-light);
 }
 .footer-subscribe-button{
     max-width: 165px;
@@ -398,8 +399,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .modal{
     max-width: 408px;
     width: 100%;
-    min-height: 576px;
+    min-height: 584px;
     padding-top: 72px;
+    padding-bottom: 24px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -474,8 +476,7 @@ label {
     border-radius: 4px;
     max-width: 360px;
     width: 100%;
-    min-height: 30px;
-    position: relative;
+    min-height: 40px;
     color: #2E2F42;
     padding-left: 38px;
 }
@@ -532,18 +533,16 @@ label {
 .priv-pol{
     text-decoration: underline;
 }
-.input-wrapper{
-    position: relative;
-}
+
 .form-icon{
     position: absolute;
-  top: 50%;
+  top: 64%;
   transform: translateY(-50%);
   left: 16px;
-   fill: currentColor;
+   fill: #2E2F42;
 transition-duration: 250ms;
 }
-.input-modal:focus, .input-modal:hover + .form-icon{
+.input-modal:focus +.form-icon, .input-modal:hover + .form-icon{
     fill: var(--color-primary);
     
 }
@@ -731,6 +730,8 @@ transition-duration: 250ms;
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .team-header{
     font-size: 36px;
